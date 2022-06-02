@@ -5,7 +5,7 @@ function CariMovie() {
     type: 'get',
     dataType: 'json',
     data: {
-      'apikey': 'c9bc65ca',
+      'apikey': '44fa6bed',
       's': $('#search-input').val()
     },
     success: function(result) {
@@ -46,11 +46,11 @@ $('#search-button').on('click', function() {
 });
 
 
-$('#search-input').on('keyup', function(e) {
+/* $('#search-input').on('keyup', function(e) {
   if (e.keycode === 13) {
     CariMovie();
   }
-});
+}); */
 
 
 $('#movie-list').on('click', '.detail', function() {
@@ -59,7 +59,7 @@ $('#movie-list').on('click', '.detail', function() {
     type: 'get',
     dataType: 'json',
     data: {
-      'apikey': 'c9bc65ca',
+      'apikey': '44fa6bed',
       'i': $(this).data('id')
     },
     success: function(result) {
