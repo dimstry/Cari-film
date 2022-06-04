@@ -11,7 +11,6 @@ function CariMovie() {
     success: function(result) {
       if (result.Response == "True") {
         let movie = result.Search;
-
         $.each(movie, function(i, data) {
           $('#movie-list').append(`
             <div class="col-md-4 col-sm-12">
@@ -44,7 +43,6 @@ function CariMovie() {
 $('#search-button').on('click', function() {
   CariMovie();
 });
-
 
 /* $('#search-input').on('keyup', function(e) {
   if (e.keycode === 13) {
